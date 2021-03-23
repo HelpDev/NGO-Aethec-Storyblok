@@ -1,6 +1,9 @@
 const generateStoryblokUrls = require("./nuxt.generate");
 
-const token = "d6IKUtAUDiKyAhpJtrLFcwtt";
+const token = process.env.STORYBLOK_TOKEN;
+
+console.log(token);
+
 export default {
   target: "server",
   /*
