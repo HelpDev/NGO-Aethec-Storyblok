@@ -5,7 +5,8 @@ on:
     types: [created]
 
 env:
-  NODE_VERSION: '14.x'
+  NODE_VERSION: "14.x"
+  STORYBLOK_TOKEN: ${{ secrets.STORYBLOK_TOKEN }}
 
 jobs:
   build-and-deploy:
@@ -13,18 +14,18 @@ jobs:
     runs-on: ubuntu-latest
     environment: production
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ env.NODE_VERSION }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ env.NODE_VERSION }}
-    - name: yarn install, generate
-      run: |
-        yarn
-        yarn generate
-    - name: publish to azure static site
-      uses: tibor19/static-website-deploy@v1
-      with:
-        enabled-static-website: 'true'
-        folder: 'dist'
-        connection-string: ${{ secrets.STORAGE_CONNECTION_STRING }}
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ env.NODE_VERSION }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+      - name: yarn install, generate
+        run: |
+          yarn
+          yarn generate
+      - name: publish to azure static site
+        uses: tibor19/static-website-deploy@v1
+        with:
+          enabled-static-website: "true"
+          folder: "dist"
+          connection-string: ${{ secrets.STORAGE_CONNECTION_STRING }}
