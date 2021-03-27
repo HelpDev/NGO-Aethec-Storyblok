@@ -23,4 +23,4 @@ $ yarn generate
 
 ## TODO
 
-- Move components from vue 2 like sintaxis to vue 3
+- Move components from vue 2 like sintaxis to vue 3 like syntax

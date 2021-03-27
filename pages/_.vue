@@ -1,9 +1,5 @@
 <template>
-  <page
-    v-if="story.content.component"
-    :key="story.content._uid"
-    :blok="story.content"
-  />
+  <page v-if="story.content.component" :key="story.content._uid" :blok="story.content" />
 </template>
 
 <script>
@@ -15,13 +11,13 @@ export default {
   },
   mounted() {
     // Use the input event for instant update of content
-    this.$storybridge.on("input", event => {
+    this.$storybridge.on('input', event => {
       if (event.story.id === this.story.id) {
         this.story.content = event.story.content;
       }
     });
     // Use the bridge to listen the events
-    this.$storybridge.on(["published", "change"], event => {
+    this.$storybridge.on(['published', 'change'], event => {
       this.$nuxt.$router.go({
         path: this.$nuxt.$router.currentRoute,
         force: true
@@ -34,15 +30,12 @@ export default {
     // according to the environment you are deploying to.
     // const version = context.query._storyblok || context.isDev ? 'draft' : 'published'
 
-    const fullSlug =
-      context.route.path == "/" || context.route.path == ""
-        ? "home"
-        : context.route.path;
+    const fullSlug = context.route.path == '/' || context.route.path == '' ? 'home' : context.route.path;
 
     // Load the JSON from the API - loadig the home content (index page)
     return context.app.$storyapi
       .get(`cdn/stories/${fullSlug}`, {
-        version: "draft"
+        version: 'draft'
       })
       .then(res => {
         return res.data;
@@ -52,7 +45,7 @@ export default {
           console.error(res);
           context.error({
             statusCode: 404,
-            message: "Failed to receive content form api"
+            message: 'Failed to receive content form api'
           });
         } else {
           console.error(res.response.data);
@@ -65,3 +58,6 @@ export default {
   }
 };
 </script>
+<style>
+@import '../assets/css/app.css';
+</style>
