@@ -20,3 +20,7 @@ $ yarn dev
 # generate static project
 $ yarn generate
 ```
+
+## TODO
+
+- Move components from vue 2 like sintaxis to vue 3

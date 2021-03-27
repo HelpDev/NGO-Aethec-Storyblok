@@ -11,6 +11,8 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "dashify": "^2.0.0",
+    "marked": "^2.0.1",
     "nuxt": "^2.14.10",
     "storyblok-nuxt": "^1.3.0"
   },
