@@ -3,7 +3,7 @@ const generateStoryblokUrls = require('./nuxt.generate');
 const token = process.env.STORYBLOK_TOKEN;
 
 export default {
-  target: 'server',
+  target: 'static',
   /*
    ** Headers of the page
    */
