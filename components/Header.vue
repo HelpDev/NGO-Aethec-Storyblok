@@ -1,91 +1,37 @@
 <template>
-  <header :class="blok.style.join(' ')" v-editable="blok">
-    <div class="container" :class="blok.container_style.join(' ')">
-      <nav class="navbar" :class="blok.navbar_style.join(' ')">
-        <nuxt-link
-          :class="blok.logo_style.join(' ')"
-          :to="`/${blok.logo_link.cached_url}`"
-          v-if="blok.logo"
-        >
-          <img :src="blok.logo" :height="blok.logo_height" alt="Logo" />
-        </nuxt-link>
-
-        <button
-          v-if="!blok.hide_navi"
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          :data-target="`#navbar-${blok._uid}`"
-          :aria-controls="`navbar-${blok._uid}`"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div
-          v-if="!blok.hide_navi"
-          class="collapse navbar-collapse"
-          :id="`navbar-${blok._uid}`"
-        >
-          <ul
-            v-if="blok.nav_links && blok.nav_links.length"
-            class="navbar-nav"
-            :class="blok.main_nav_style.join(' ')"
-          >
-            <component
-              :key="blok._uid"
-              v-for="blok in blok.nav_links"
-              :blok="blok"
-              :is="componentName"
-            ></component>
-          </ul>
-
-          <ul
-            v-if="blok.second_nav_links && blok.second_nav_links.length"
-            class="navbar-nav justify-content-end d-none d-lg-flex ml-md-auto"
-          >
-            <component
-              :key="blok._uid"
-              v-for="blok in blok.second_nav_links"
-              :blok="blok"
-              :is="componentName"
-            ></component>
-          </ul>
-
-          <a
-            v-if="blok.button_text"
-            class="btn btn-empty ml-md-3"
-            :href="blok.button_link.cached_url"
-          >
-            {{ blok.button_text }}
-          </a>
-        </div>
-      </nav>
+  <header class="max-w-5xl mx-auto py-8 flex">
+    <nav>
+      <ul>
+        <li>
+          <nuxt-link class="text-teal-600 hover:underline" to="/">
+            Home
+          </nuxt-link>
+        </li>
+        <li>
+          <nuxt-link class="text-teal-600 hover:underline" to="/articles">
+            Blog
+          </nuxt-link>
+        </li>
+      </ul>
+    </nav>
+    <div class="flex-1">
+      <a href="/" class="block w-56 mx-auto">
+        <img src="http://a.storyblok.com/f/42016/1096x313/0353bf6654/logo2.png" />
+      </a>
     </div>
+    <nav>
+      <ul>
+        <li>
+          <nuxt-link class="text-teal-600 hover:underline" to="/">
+            English
+          </nuxt-link>
+        </li>
+        <li>
+          <nuxt-link class="text-teal-600 hover:underline" to="/es">
+            Spanish
+          </nuxt-link>
+        </li>
+      </ul>
+    </nav>
   </header>
 </template>
-
-<script>
-import dashify from "dashify";
-
-export default {
-  props: {
-    blok: {
-      type: Object,
-      required: true
-    }
-  },
-  data: () => ({
-    componentName: ""
-  }),
-  setup() {
-    const { block } = props;
-
-    return {
-      block,
-      componentName: dashify(block.component)
-    };
-  }
-};
-</script>

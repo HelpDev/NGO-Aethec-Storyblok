@@ -1,16 +1,24 @@
 <template>
-  <div v-editable="blok"
-       class="col-12 col-sm-6 col-lg-3 pt-4 pt-lg-0">
-    <img alt="image"
-         class="fdb-icon"
-         :src="blok.icon">
-    <h3><strong>{{ blok.headline }}</strong></h3>
-    <p>{{ blok.text }}</p>
+  <div
+    v-editable="blok"
+    class="py-2 text-center">
+    <img
+      class="mx-auto"
+      :src="blok.icon">
+    <h1 class="text-lg">{{ blok.name }}</h1>
+    <p class="text-gray-600">
+      {{ blok.description }}
+    </p>
   </div>
 </template>
 
 <script>
 export default {
-  props: ['blok']
+  props: {
+    blok: {
+      type: Object,
+      required: true
+    }
+  }
 }
 </script>
