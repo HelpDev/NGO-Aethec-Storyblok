@@ -61,5 +61,17 @@ export default {
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
    */
-  build: {}
+  build: {},
+
+  buildModules: [
+    [
+      'storyblok-nuxt-routes',
+      {
+        accessToken: token,
+        defaultLanguage: '',
+        contentTypes: 'page,article',
+        resolveRelations: 'page.author'
+      }
+    ]
+  ]
 };

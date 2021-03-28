@@ -18,7 +18,8 @@
     "dashify": "^2.0.0",
     "marked": "^2.0.1",
     "nuxt": "^2.15.3",
-    "storyblok-nuxt": "^1.3.1"
+    "storyblok-nuxt": "^1.3.1",
+    "storyblok-nuxt-routes": "^1.3.0-beta.1"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.4.0"
