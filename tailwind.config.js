@@ -2,10 +2,32 @@
  ** TailwindCSS Configuration File
  **
  ** Docs: https://tailwindcss.com/docs/configuration
- ** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
+ ** Docs Nuxt: https://tailwindcss.nuxtjs.org/
  */
+
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
-  theme: {},
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['Inter', ...defaultTheme.fontFamily.sans]
+      },
+      colors: {
+        primary: {
+          100: '#fdd6db',
+          200: '#fcaeb6',
+          300: '#fa8592',
+          400: '#f95d6d',
+          500: '#f73449',
+          600: '#c62a3a',
+          700: '#941f2c',
+          800: '#63151d',
+          900: '#310a0f'
+        }
+      }
+    }
+  },
   variants: {},
   plugins: [require('@tailwindcss/typography')],
   purge: {

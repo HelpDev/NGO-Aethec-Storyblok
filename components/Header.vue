@@ -1,5 +1,5 @@
 <template>
-  <header class="relative bg-white">
+  <header class="relative bg-primary-500">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <div
         class="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10"
@@ -18,7 +18,7 @@
             v-for="menuItem in menu"
             :key="menuItem.text"
             :to="localePath(menuItem.link)"
-            class="text-base font-medium text-gray-500 hover:text-gray-900"
+            class="text-base font-medium text-white hover:text-primary-700"
           >
             {{ $t(menuItem.text) }}
           </nuxt-link>
