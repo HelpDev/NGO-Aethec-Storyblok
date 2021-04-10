@@ -8,7 +8,7 @@
           <nuxt-link :to="localePath('/')">
             <img
               class="h-8 w-auto sm:h-10"
-              src="@/assets/images/logo_landscape.png"
+              src="@/assets/images/logo_landscape_white.png"
               alt="Logo"
             />
           </nuxt-link>
