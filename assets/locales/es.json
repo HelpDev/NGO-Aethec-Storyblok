@@ -1,3 +1,9 @@
 {
-  "example": "Hola Mundo"
+  "menu": {
+    "projects": "Proyectos",
+    "collaborate": "Colabora",
+    "team": "Equipo",
+    "articles": "Artículos",
+    "contact": "Contacta"
+  }
 }

@@ -15,10 +15,12 @@
         </div>
         <nav class="hidden md:flex space-x-10">
           <nuxt-link
-            :to="localePath('articles')"
+            v-for="menuItem in menu"
+            :key="menuItem.text"
+            :to="localePath(menuItem.link)"
             class="text-base font-medium text-gray-500 hover:text-gray-900"
           >
-            Articles
+            {{ $t(menuItem.text) }}
           </nuxt-link>
         </nav>
         <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
@@ -75,8 +77,16 @@ export default {
   components: {
     TranslateIcon
   },
-  setup() {
-    return {};
+  setup(props, context) {
+    const menu = [
+      { link: 'projects', text: 'menu.projects' },
+      { link: 'collaborate', text: 'menu.collaborate' },
+      { link: 'team', text: 'menu.team' },
+      { link: 'articles', text: 'menu.articles' },
+      { link: 'contact', text: 'menu.contact' }
+    ];
+
+    return { menu };
   }
 };
 </script>
