@@ -5,7 +5,7 @@
         class="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10"
       >
         <div class="flex justify-start lg:w-0 lg:flex-1">
-          <nuxt-link to="/">
+          <nuxt-link :to="localePath('/')">
             <img
               class="h-8 w-auto sm:h-10"
               src="@/assets/images/logo_landscape.png"
@@ -15,7 +15,7 @@
         </div>
         <nav class="hidden md:flex space-x-10">
           <nuxt-link
-            to="articles"
+            :to="localePath('articles')"
             class="text-base font-medium text-gray-500 hover:text-gray-900"
           >
             Articles
@@ -46,14 +46,14 @@
 
             <div class="py-1 rounded-md shadow-xs">
               <nuxt-link
-                to="/"
+                :to="switchLocalePath('en')"
                 class="block px-4 py-2 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
                 role="menuitem"
               >
                 English
               </nuxt-link>
               <nuxt-link
-                to="/es"
+                :to="switchLocalePath('es')"
                 class="block px-4 py-2 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
                 role="menuitem"
               >

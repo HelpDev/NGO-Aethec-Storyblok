@@ -39,6 +39,7 @@ export default {
    */
   plugins: [
     '~/plugins/story-components',
+    '~/plugins/locale',
     '~/plugins/tailwind-components',
     '~/plugins/composition-api.js',
     '~/plugins/storyblok-rich-text-renderer.js'
@@ -59,6 +60,7 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
+    'nuxt-i18n',
     '@nuxtjs/svg',
     [
       'storyblok-nuxt',
@@ -73,5 +75,22 @@ export default {
    ** See https://nuxtjs.org/api/configuration-build/
    */
   build: {},
-  generate: generateStoryblokUrls(token)
+  generate: generateStoryblokUrls(token),
+
+  i18n: {
+    locales: ['en', 'es'],
+    defaultLocale: 'en',
+    vueI18n: {
+      fallbackLocale: 'en',
+      messages: {
+        en: require('./assets/locales/en.json'),
+        es: require('./assets/locales/es.json')
+      }
+    },
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      onlyOnRoot: true // recommended
+    }
+  }
 };
