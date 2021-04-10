@@ -38,7 +38,8 @@ export default {
    ** https://nuxtjs.org/guide/plugins
    */
   plugins: [
-    '~/plugins/components',
+    '~/plugins/story-components',
+    '~/plugins/tailwind-components',
     '~/plugins/composition-api.js',
     '~/plugins/storyblok-rich-text-renderer.js'
   ],

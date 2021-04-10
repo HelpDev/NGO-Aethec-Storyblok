@@ -16,6 +16,7 @@ module.exports = {
       'layouts/**/*.vue',
       'pages/**/*.vue',
       'plugins/**/*.js',
+      'node_modules/vue-tailwind/dist/*.js',
       'nuxt.config.js'
     ]
   }
