@@ -1,54 +1,67 @@
 <template>
   <section>
-    <Article :blok="story.content"/>
+    <Article :blok="story.content" />
   </section>
 </template>
 
 <script>
-import Article from '~/components/Article.vue'
+import Article from '~/components/Article.vue';
 
 export default {
   components: {
     Article
   },
-  data () {
+  data() {
     return {
       story: { content: {} }
-    }
+    };
   },
-  mounted () {
+  mounted() {
     // Use the input event for instant update of content
-    this.$storybridge.on('input', (event) => {
+    this.$storybridge.on('input', event => {
       if (event.story.id === this.story.id) {
-        this.story.content = event.story.content
+        this.story.content = event.story.content;
       }
-    })
+    });
     // Use the bridge to listen the events
-    this.$storybridge.on(['published', 'change'], (event) => {
+    this.$storybridge.on(['published', 'change'], event => {
       // window.location.reload()
       this.$nuxt.$router.go({
         path: this.$nuxt.$router.currentRoute,
-        force: true,
-      })
-    })
+        force: true
+      });
+    });
   },
-  asyncData (context) {
+  asyncData(context) {
     // Load the JSON from the API
-    let version = context.query._storyblok || context.isDev ? 'draft' : 'published'
+    let version =
+      context.query._storyblok || context.isDev ? 'draft' : 'published';
 
-    return context.app.$storyapi.get(`cdn/stories/articles/${context.params.slug}`, {
-      version: version
-    }).then((res) => {
-      return res.data
-    }).catch((res) => {
-      if (!res.response) {
-        console.error(res)
-        context.error({ statusCode: 404, message: 'Failed to receive content form api' })
-      } else {
-        console.error(res.response.data)
-        context.error({ statusCode: res.response.status, message: res.response.data })
-      }
-    })
+    return context.app.$storyapi
+      .get(
+        `cdn/stories/${context.localePath(`articles/${context.params.slug}`)}`,
+        {
+          version: version
+        }
+      )
+      .then(res => {
+        return res.data;
+      })
+      .catch(res => {
+        if (!res.response) {
+          console.error(res);
+          context.error({
+            statusCode: 404,
+            message: 'Failed to receive content form api'
+          });
+        } else {
+          console.error(res.response.data);
+          context.error({
+            statusCode: res.response.status,
+            message: res.response.data
+          });
+        }
+      });
   }
-}
+};
 </script>
