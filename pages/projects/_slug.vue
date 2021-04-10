@@ -28,7 +28,7 @@ export default {
   asyncData(context) {
     return loadPageContentFromApi(
       context,
-      `cdn/stories/${context.localePath(`articles/${context.params.slug}`)}`
+      `cdn/stories/${context.localePath(`projects/${context.params.slug}`)}`
     );
   }
 };

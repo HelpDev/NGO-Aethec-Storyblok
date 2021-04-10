@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h2 class="py-10 text-center font-bold text-4xl">Articles Overview</h2>
+    <h2 class="py-10 text-center font-bold text-4xl">Projects Overview</h2>
     <ul class="flex py-6 mb-6">
       <li
         v-for="article in stories"
@@ -34,7 +34,7 @@ export default {
     return loadPageContentFromApi(
       context,
       'cdn/stories',
-      context.localePath('articles/')
+      context.localePath('projects/')
     );
   }
 };
