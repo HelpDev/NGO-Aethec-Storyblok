@@ -1,3 +1,4 @@
+const generateStoryblokUrls = require('./nuxt.generate');
 const token = process.env.STORYBLOK_TOKEN;
 
 export default {
@@ -62,16 +63,5 @@ export default {
    ** See https://nuxtjs.org/api/configuration-build/
    */
   build: {},
-
-  buildModules: [
-    [
-      'storyblok-nuxt-routes',
-      {
-        accessToken: token,
-        defaultLanguage: '',
-        contentTypes: 'page,article',
-        resolveRelations: 'page.author'
-      }
-    ]
-  ]
+  generate: generateStoryblokUrls(token)
 };
