@@ -21,6 +21,11 @@ $ yarn dev
 $ yarn generate
 ```
 
+# Inspiration
+
+- Vue Tailwind Components: https://www.vue-tailwind.com/
+- Tailwind UI: https://tailwindui.com/
+
 ## TODO
 
 - Move components from vue 2 like sintaxis to vue 3 like syntax

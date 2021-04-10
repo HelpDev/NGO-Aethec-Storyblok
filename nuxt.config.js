@@ -21,7 +21,11 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      {
+        hid: 'description',
+        name: 'description',
+        content: process.env.npm_package_description || ''
+      }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
@@ -33,7 +37,11 @@ export default {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: ['~/plugins/components', '~/plugins/composition-api.js', '~/plugins/storyblok-rich-text-renderer.js'],
+  plugins: [
+    '~/plugins/components',
+    '~/plugins/composition-api.js',
+    '~/plugins/storyblok-rich-text-renderer.js'
+  ],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
@@ -50,6 +58,7 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
+    '@nuxtjs/svg',
     [
       'storyblok-nuxt',
       {

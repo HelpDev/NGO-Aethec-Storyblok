@@ -22,20 +22,40 @@
           </nuxt-link>
         </nav>
         <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-          <a
-            href="#"
-            class="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900"
-          >
-            Sign in
-          </a>
-          <a
-            href="#"
-            class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
-          >
-            Sign up
-          </a>
+          <t-dropdown>
+            <div class="py-1 rounded-md shadow-xs">
+              <nuxt-link
+                to="/"
+                class="block px-4 py-2 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
+                role="menuitem"
+              >
+                <BellIcon /> English
+              </nuxt-link>
+              <nuxt-link
+                to="/es"
+                class="block px-4 py-2 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
+                role="menuitem"
+              >
+                Español
+              </nuxt-link>
+            </div>
+          </t-dropdown>
         </div>
       </div>
     </div>
   </header>
 </template>
+
+<script>
+import BellIcon from 'heroicons/solid/bell.svg?inline';
+
+export default {
+  name: 'Header',
+  components: {
+    BellIcon
+  },
+  setup() {
+    return {};
+  }
+};
+</script>
