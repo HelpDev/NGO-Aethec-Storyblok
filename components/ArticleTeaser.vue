@@ -1,7 +1,8 @@
 <template>
   <nuxt-link
     :to="articleLink"
-    class="article-teaser block py-4 px-6 border rounded border-gray-500">
+    class="article-teaser block py-4 px-6 border rounded border-gray-500"
+  >
     <h2 class="pt-2 pb-4 text-2xl font-bold">
       {{ articleContent.name }}
     </h2>
@@ -23,11 +24,11 @@ export default {
       required: true
     }
   }
-}
+};
 </script>
 
 <style>
 .article-teaser:hover {
-  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
 }
 </style>
