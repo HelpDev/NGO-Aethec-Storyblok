@@ -8,7 +8,7 @@
         src="https://dummyimage.com/200x200"
       >
       <div class="flex-grow sm:pl-8">
-        <h2 class="title-font font-medium text-lg text-gray-900">Holden Caulfield</h2>
+        <h2 class="title-font font-medium text-lg text-gray-900">{{blok.name}}</h2>
         <h3 class="text-gray-500 mb-3">UI Developer</h3>
         <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
         <span class="inline-flex">
@@ -60,8 +60,8 @@
 <script>
 export default {
   props: {
-    name: {
-      type: String,
+    blok: {
+      type: Object,
       required: true
     }
   }
