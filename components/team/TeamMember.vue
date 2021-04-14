@@ -1,5 +1,5 @@
+
 <template>
-  <!-- <div class="flex flex-wrap -m-4"> -->
   <div class="p-4 lg:w-1/2">
     <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
       <img
@@ -60,8 +60,8 @@
 <script>
 export default {
   props: {
-    blok: {
-      type: Object,
+    name: {
+      type: String,
       required: true
     }
   }
