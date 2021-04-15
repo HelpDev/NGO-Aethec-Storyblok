@@ -1,6 +1,6 @@
 <template>
   <section>
-    <Article :blok="story.content" />
+    <content-project :blok="story.content" />
   </section>
 </template>
 
@@ -10,12 +10,8 @@ import {
   onStoryBridgeChangedToPublishedRefreshPage,
   loadPageContentFromApi
 } from '~/helpers';
-import Article from '~/components/Article.vue';
 
 export default {
-  components: {
-    Article
-  },
   data() {
     return {
       story: { content: {} }

@@ -3,19 +3,12 @@
     <h2 class="py-10 text-center font-bold text-4xl">Projects Overview</h2>
     <ul class="flex py-6 mb-6">
       <li
-        v-for="article in stories"
-        :key="article._uid"
+        v-for="project in stories"
+        :key="project._uid"
         class="flex-auto px-6"
         style="min-width: 33%"
       >
-        <article-teaser
-          v-if="article.content"
-          :article-link="`/${article.full_slug}`"
-          :article-content="article.content"
-        />
-        <p v-else class="px-4 py-2 text-white bg-red-700 text-center rounded">
-          This content loads on save. <strong>Save the entry & reload.</strong>
-        </p>
+        {{project}}
       </li>
     </ul>
   </section>
