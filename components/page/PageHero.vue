@@ -1,10 +1,11 @@
 <template>
-  <div :class="`flex w-full mb-20 ${blok.side ? 'flex-row-reverse' : 'flex-row'}`">
+  <div class="w-full h-4/5">
     <div>
-      <p>{{blok.text}}</p>
+      <h2>{{blok.title}}</h2>
     </div>
     <div
       v-if="blok.image"
+      class="h-full"
       :style="{backgroundImage: `url(${blok.image.filename})`}"
     ></div>
   </div>
@@ -17,6 +18,9 @@ export default {
       type: Object,
       required: true
     }
+  },
+  setup(props) {
+    console.log(props.blok);
   }
 };
 </script>

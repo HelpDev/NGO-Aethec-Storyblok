@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="flex-grow">
     <component
       v-for="hero in blok.hero"
       :key="hero._uid"
@@ -17,9 +17,6 @@ export default {
       type: Object,
       required: true
     }
-  },
-  setup(props) {
-    console.log(props.blok);
   }
 };
 </script>

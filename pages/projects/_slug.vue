@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="flex flex-grow">
     <content-project :blok="story.content" />
   </section>
 </template>
