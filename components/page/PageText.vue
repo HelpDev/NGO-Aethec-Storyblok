@@ -1,12 +1,20 @@
 <template>
-  <div :class="`flex w-full mb-20 ${blok.side ? 'flex-row-reverse' : 'flex-row'}`">
-    <div>
-      <p>{{blok.text}}</p>
-    </div>
+  <div
+    :class="
+      ` max-w-6xl mx-auto py-8 sm:px-6 ${
+        blok.side ? 'flex-row-reverse' : 'flex-row'
+      }`
+    "
+  >
     <div
       v-if="blok.image"
-      :style="{backgroundImage: `url(${blok.image.filename})`}"
+      class="float-right mx-4 w-80 h-80 rounded-full bg-cover"
+      :style="{ backgroundImage: `url(${blok.image.filename})` }"
     ></div>
+    <p
+      class="leading-8 font-medium max-w-3xl "
+      v-html="renderText(blok.text)"
+    ></p>
   </div>
 </template>
 
@@ -17,6 +25,15 @@ export default {
       type: Object,
       required: true
     }
+  },
+  setup(props) {
+    function renderText(text) {
+      return text ? this.$storyapi.richTextResolver.render(text) : '';
+    }
+
+    return {
+      renderText
+    };
   }
 };
 </script>

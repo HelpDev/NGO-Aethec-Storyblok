@@ -55,7 +55,8 @@ export default {
    */
   buildModules: [
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/google-fonts'
   ],
   /*
    ** Nuxt.js modules
@@ -92,6 +93,11 @@ export default {
       useCookie: true,
       cookieKey: 'i18n_redirected',
       onlyOnRoot: true // recommended
+    }
+  },
+  googleFonts: {
+    families: {
+      Montserrat: true
     }
   }
 };

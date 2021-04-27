@@ -7,6 +7,12 @@
       :is="hero.component"
     />
 
+    <component
+      v-for="blok in blok.body"
+      :key="blok._uid"
+      :blok="blok"
+      :is="blok.component"
+    />
   </div>
 </template>
 
