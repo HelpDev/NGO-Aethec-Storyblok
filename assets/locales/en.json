@@ -5,5 +5,10 @@
     "team": "About us",
     "articles": "Articles",
     "contact": "Contact"
+  },
+  "projects": {
+    "title": "Check our projects",
+    "view": "View project",
+    "pictures": "About the project"
   }
 }

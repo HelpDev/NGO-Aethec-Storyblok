@@ -5,5 +5,10 @@
     "team": "Nosotros",
     "articles": "Artículos",
     "contact": "Contacta"
+  },
+  "projects": {
+    "title": "Conoce nuestros proyectos",
+    "view": "Ver proyecto",
+    "pictures": "Sobre el proyecto"
   }
 }
