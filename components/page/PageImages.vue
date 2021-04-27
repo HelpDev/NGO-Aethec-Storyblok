@@ -1,8 +1,11 @@
 <template>
-  <div class="flex w-full mb-20">
-    <div>
-      <p>{{ blok.images }}</p>
-    </div>
+  <div class="flex flex-wrap max-w-6xl mx-auto py-8 sm:px-6">
+    <img
+      v-for="image in blok.images"
+      :key="image.filename"
+      :src="image.filename"
+      class="w-2/4 my-10 object-cover shadow-lg"
+    />
   </div>
 </template>
 
@@ -13,9 +16,6 @@ export default {
       type: Object,
       required: true
     }
-  },
-  setup(props) {
-    console.log(props.blok);
   }
 };
 </script>

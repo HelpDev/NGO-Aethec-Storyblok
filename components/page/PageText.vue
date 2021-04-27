@@ -8,7 +8,7 @@
   >
     <div
       v-if="blok.image"
-      class="float-right mx-4 w-80 h-80 rounded-full bg-cover"
+      class="float-right mx-4 w-80 h-80 rounded-full bg-cover shadow-lg"
       :style="{ backgroundImage: `url(${blok.image.filename})` }"
     ></div>
     <p
@@ -26,7 +26,7 @@ export default {
       required: true
     }
   },
-  setup(props) {
+  setup() {
     function renderText(text) {
       return text ? this.$storyapi.richTextResolver.render(text) : '';
     }

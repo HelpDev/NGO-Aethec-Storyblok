@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full h-5/6">
+  <div class="w-full h-80v max-h-screen">
     <div
       class="absolute text-right pr-3 py-2 rounded-br-xl bg-primary-500 text-white w-80 text-3xl z-20"
     >
@@ -26,9 +26,6 @@ export default {
       type: Object,
       required: true
     }
-  },
-  setup(props) {
-    console.log(props.blok);
   }
 };
 </script>
