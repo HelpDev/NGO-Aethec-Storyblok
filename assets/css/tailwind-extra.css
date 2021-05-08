@@ -1,0 +1,4 @@
+/* Just extra styles for tailwind */
+.hover\:fill-child-white:hover > svg {
+  fill: #fff !important;
+}

@@ -24,6 +24,12 @@ module.exports = {
           700: '#941f2c',
           800: '#63151d',
           900: '#310a0f'
+        },
+        social: {
+          twitter: '#1da1f2',
+          facebook: '#1877f2',
+          instagram: '#e4405f',
+          mail: '#005ff9'
         }
       },
       height: {

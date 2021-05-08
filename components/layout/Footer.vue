@@ -30,25 +30,25 @@
           </h5>
           <div class="mt-6">
             <a
-              class="bg-white text-blue-400 shadow-lg font-normal items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3 inline-block"
+              class="bg-white  shadow-lg font-normal items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3 inline-block hover:bg-social-twitter hover:fill-child-white"
               target="_blank"
               href="https://twitter.com/????"
             >
               <social-icon icon-name="twitter"/></a
             ><a
-              class="bg-white text-blue-600 shadow-lg font-normal items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3 inline-block"
+              class="bg-white shadow-lg font-normal items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3 inline-block hover:bg-social-facebook hover:fill-child-white"
               target="_blank"
               href="https://facebook.com/????"
             >
               <social-icon icon-name="facebook"/></a
             ><a
-              class="bg-white text-pink-400 shadow-lg font-normal items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3 inline-block"
+              class="bg-white shadow-lg font-normal items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3 inline-block hover:bg-social-instagram hover:fill-child-white"
               target="_blank"
               href="https://instagram.com/????"
             >
               <social-icon icon-name="instagram"/></a
             ><nuxt-link
-              class="bg-white text-blue-900 shadow-lg font-normal items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3 inline-block"
+              class="bg-white shadow-lg font-normal items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3 inline-block hover:bg-social-mail hover:fill-child-white"
               :to="localePath('contact')"
             >
               <social-icon icon-name="mail-dot-ru" />
