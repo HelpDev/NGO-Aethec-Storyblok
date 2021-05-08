@@ -6,6 +6,10 @@
     "articles": "Articles",
     "contact": "Contact"
   },
+  "footer": {
+    "title": "Let's keep in touch",
+    "subtitle": "Write us through any of our social networks, we will answer soon!"
+  },
   "projects": {
     "title": "Check our projects",
     "view": "View project",

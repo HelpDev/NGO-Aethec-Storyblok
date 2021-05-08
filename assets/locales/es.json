@@ -6,6 +6,10 @@
     "articles": "Artículos",
     "contact": "Contacta"
   },
+  "footer": {
+    "title": "Sígamos en contacto",
+    "subtitle": "Escríbenos a través de cualquiera de nuestras redes sociales, ¡Contestamos pronto!"
+  },
   "projects": {
     "title": "Conoce nuestros proyectos",
     "view": "Ver proyecto",

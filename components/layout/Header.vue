@@ -79,9 +79,9 @@ export default {
   setup(props, context) {
     const menu = [
       { link: 'projects', text: 'menu.projects' },
-      { link: 'collaborate', text: 'menu.collaborate' },
-      { link: 'team', text: 'menu.team' },
-      { link: 'articles', text: 'menu.articles' },
+      // { link: 'collaborate', text: 'menu.collaborate' },
+      // { link: 'team', text: 'menu.team' },
+      // { link: 'articles', text: 'menu.articles' },
       { link: 'contact', text: 'menu.contact' }
     ];
 
