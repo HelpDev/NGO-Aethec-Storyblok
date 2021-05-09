@@ -55,7 +55,7 @@
             </nuxt-link>
           </div>
         </div>
-        <div class="w-full lg:w-6/12 px-4">
+        <div class="w-full lg:w-6/12 pt-3 lg:pt-0 lg:px-4">
           <div class="flex flex-wrap items-top mb-6">
             <div class="w-full lg:w-6/12 px-4 ml-auto">
               <h5 class="text-2xl font-semibold text-white">
