@@ -21,11 +21,16 @@
       :style="{ backgroundImage: `url(${blok.image.filename})` }"
     ></div>
 
-    <p
-      v-if="blok.isTitle"
-      class="h-1/4 md:h-3/4 font-serif px-6 font-extrabold text-5xl flex justify-center items-center content-center"
-      v-html="renderText(blok.text)"
-    ></p>
+    <div v-if="blok.isTitle">
+      <p
+        class="h-1/4 md:h-3/4 font-serif px-6 font-extrabold text-5xl flex justify-center items-center content-center"
+        v-html="renderText(blok.text)"
+      ></p>
+
+      <p v-if="blok.subText" class="leading-8 font-medium max-w-3xl">
+        {{ blok.subText }}
+      </p>
+    </div>
     <p
       v-else
       class="leading-8 font-medium max-w-3xl "
