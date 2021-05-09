@@ -29,6 +29,12 @@
 
       <p v-if="blok.subText" class="leading-8 font-medium max-w-3xl">
         {{ blok.subText }}
+
+        <nuxt-link :to="localePath('projects')">
+          <t-button variant="secondary">
+            <TranslateIcon class="w-4" />
+          </t-button>
+        </nuxt-link>
       </p>
     </div>
     <p
