@@ -2,3 +2,7 @@
 .hover\:fill-child-white:hover > svg {
   fill: #fff !important;
 }
+
+.min-h-screenx1\.5 {
+  min-height: 150vh;
+}

@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen flex flex-col font-sans">
     <Header />
-    <section class="min-h-screen">
+    <section class="min-h-screenx1.5">
       <Nuxt />
     </section>
     <Footer />
