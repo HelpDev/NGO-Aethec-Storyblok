@@ -94,9 +94,3 @@
     </div>
   </footer>
 </template>
-
-<script>
-export default {
-  setup(props, context) {}
-};
-</script>

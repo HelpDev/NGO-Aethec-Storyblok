@@ -1,9 +1,9 @@
 <template>
   <div class="min-h-screen flex flex-col font-sans">
     <Header />
-    <section class="min-h-screenx1.5">
+    <main class="min-h-screenx1.5">
       <Nuxt />
-    </section>
+    </main>
     <Footer />
   </div>
 </template>

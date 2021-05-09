@@ -97,7 +97,8 @@ export default {
   },
   googleFonts: {
     families: {
-      Montserrat: true
+      Montserrat: true,
+      'Playfair+Display': [700, 800, 900]
     }
   }
 };
