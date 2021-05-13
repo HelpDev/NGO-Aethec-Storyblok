@@ -13,7 +13,7 @@
             />
           </nuxt-link>
         </div>
-        <nav class="hidden md:flex space-x-10">
+        <nav class="flex space-x-10">
           <nuxt-link
             v-for="menuItem in menu"
             :key="menuItem.text"
@@ -23,7 +23,7 @@
             {{ $t(menuItem.text) }}
           </nuxt-link>
         </nav>
-        <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+        <div class="flex items-center justify-end md:flex-1 lg:w-0">
           <t-dropdown>
             <div
               slot="trigger"
@@ -36,11 +36,12 @@
               class="flex"
             >
               <t-button
-                variant="secondary"
+                variant="outline-secondary"
                 @mousedown="mousedownHandler"
                 @focus="focusHandler"
                 @blur="blurHandler"
                 @keydown="keydownHandler"
+                class="text-white"
               >
                 <TranslateIcon class="w-4" />
               </t-button>
