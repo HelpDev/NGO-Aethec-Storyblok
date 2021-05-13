@@ -32,19 +32,19 @@
             <a
               class="bg-white  shadow-lg font-normal items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3 inline-block hover:bg-social-twitter hover:fill-child-white"
               target="_blank"
-              href="https://twitter.com/????"
+              href="https://twitter.com/needu_org"
             >
               <social-icon icon-name="twitter"/></a
             ><a
               class="bg-white shadow-lg font-normal items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3 inline-block hover:bg-social-facebook hover:fill-child-white"
               target="_blank"
-              href="https://facebook.com/????"
+              href="https://facebook.com/needUorg"
             >
               <social-icon icon-name="facebook"/></a
             ><a
               class="bg-white shadow-lg font-normal items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3 inline-block hover:bg-social-instagram hover:fill-child-white"
               target="_blank"
-              href="https://instagram.com/????"
+              href="https://instagram.com/needu_org"
             >
               <social-icon icon-name="instagram"/></a
             ><nuxt-link
