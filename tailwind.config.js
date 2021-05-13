@@ -12,8 +12,8 @@ module.exports = {
     extend: {
       fontFamily: {
         // First add to nuxt config
-        sans: ['Montserrat', ...defaultTheme.fontFamily.sans],
-        serif: ['Playfair Display', ...defaultTheme.fontFamily.sans]
+        sans: ['Work Sans', ...defaultTheme.fontFamily.sans],
+        serif: ['Montserrat', ...defaultTheme.fontFamily.sans]
       },
       colors: {
         primary: {

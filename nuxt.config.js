@@ -97,8 +97,8 @@ export default {
   },
   googleFonts: {
     families: {
-      Montserrat: true,
-      'Playfair+Display': [700, 800, 900]
+      'Work+Sans': true,
+      'Montserrat ': [600, 700, 800, 900]
     }
   }
 };

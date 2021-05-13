@@ -1,6 +1,8 @@
 <template>
   <section>
-    <div class="py-8 w-full text-center text-5xl bg-opacity-90 z-20">
+    <div
+      class="py-8 w-full text-center font-serif font-extrabold text-5xl bg-opacity-90 z-20"
+    >
       <h2>{{ $t('projects.title') }}</h2>
     </div>
 
