@@ -1,6 +1,6 @@
 <template>
   <div
-    class="grid grid-cols-4 gap-8 mt-10 sm:grid-cols-8 lg:grid-cols-12 sm:px-8 xl:px-6"
+    class="grid grid-cols-4 gap-8 mt-10 mb-10 sm:grid-cols-8 lg:grid-cols-12 sm:px-8 xl:px-6"
   >
     <component
       v-for="blok in blok.body"

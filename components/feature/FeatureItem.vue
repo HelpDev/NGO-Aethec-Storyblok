@@ -1,6 +1,11 @@
 <template>
-  <div
-    class="flex flex-col items-center justify-between col-span-4 px-8 py-12 space-y-4 bg-gray-100 sm:rounded-xl"
+  <nuxt-link
+    :to="localePath(blok.page)"
+    :class="
+      `flex flex-col items-center justify-between col-span-4 px-8 py-12 space-y-4 bg-gray-50 sm:rounded-xl transition-all shadow-md ${
+        blok.page ? 'hover:shadow-lg hover:bg-gray-100' : ''
+      }`
+    "
   >
     <div v-if="blok.icon" class="p-3 text-white bg-primary-500 rounded-full">
       <HeroIcon :icon="blok.icon" type="outline" size="2rem" />
@@ -9,7 +14,7 @@
     <p class="text-base text-center text-gray-500">
       {{ blok.text }}
     </p>
-  </div>
+  </nuxt-link>
 </template>
 
 <script>
