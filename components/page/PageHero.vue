@@ -18,7 +18,7 @@
       </div>
     </div>
   </div>
-  <div v-else-if="blok.type === Type.Home" class="px-2 py-20 md:px-0">
+  <div v-else-if="blok.type === Type.Home" class="px-2 py-10 md:px-0">
     <div class="container items-center max-w-6xl px-8 mx-auto xl:px-5">
       <div class="flex flex-wrap items-center sm:-mx-3">
         <div class="w-full md:w-1/2 md:px-3">
