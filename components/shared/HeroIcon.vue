@@ -1,33 +1,45 @@
-
-<template>
-  <svg
-    role="img"
-    viewBox="0 0 24 24"
-    xmlns="http://www.w3.org/2000/svg"
-    :style="{width: '1.25rem', fill: `#${icon.hex}`}"
-  >
-    <path :d="icon.path"></path>
-  </svg>
+<template v-html="source">
+  <span v-html="source" :style="{ width: size }" />
 </template>
 
 <script>
-import simpleIcons from 'simple-icons';
+import { ref } from '@vue/composition-api';
 
 export default {
   props: {
-    iconName: {
+    icon: {
       type: String,
       required: true
+    },
+    type: {
+      type: String
+    },
+    size: {
+      type: String,
+      default: '1rem'
     }
   },
   setup(props) {
-    const { iconName } = props;
+    const { icon, type = 'solid' } = props;
 
-    const icon = simpleIcons.get(iconName);
+    const source = ref(null);
+
+    async function initSource() {
+      const image = await import(`heroicons/${type}/${icon}.svg?raw`);
+      source.value = image.default;
+    }
+
+    initSource();
 
     return {
-      icon
+      source
     };
   }
 };
 </script>
+
+<style scoped>
+span >>> svg {
+  width: inherit;
+}
+</style>
