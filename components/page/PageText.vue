@@ -10,12 +10,15 @@
     "
   >
     <div
+      v-if="blok.image.filename"
       class="mx-4 w-80 h-80 rounded-full bg-cover shadow-lg"
       :style="{ backgroundImage: `url(${blok.image.filename})` }"
     ></div>
 
     <p
-      class="leading-8 font-medium max-w-3xl "
+      :class="
+        `leading-8 font-medium  ${blok.image.filename ? 'max-w-3xl' : ''}`
+      "
       v-html="renderText(blok.text)"
     ></p>
   </div>
