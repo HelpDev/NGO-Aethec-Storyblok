@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col text-center w-full mb-10">
+  <div class="flex flex-col text-center w-full">
     <div
       class="pt-8 pb-4 w-full text-center text-5xl font-serif  font-extrabold  bg-opacity-90 z-20"
     >

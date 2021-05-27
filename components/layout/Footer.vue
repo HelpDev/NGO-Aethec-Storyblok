@@ -46,8 +46,16 @@
               target="_blank"
               href="https://instagram.com/needu_org"
             >
-              <social-icon icon-name="instagram"/></a
-            ><nuxt-link
+              <social-icon icon-name="instagram"
+            /></a>
+            <a
+              class="bg-white shadow-lg font-normal items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3 inline-block hover:bg-social-whatsapp hover:fill-child-white"
+              href="whatsapp://send?text=https://need-u.org"
+              data-action="share/whatsapp/share"
+            >
+              <social-icon icon-name="whatsapp" />
+            </a>
+            <nuxt-link
               class="bg-white shadow-lg font-normal items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3 inline-block hover:bg-social-mail hover:fill-child-white"
               :to="localePath('contact')"
             >

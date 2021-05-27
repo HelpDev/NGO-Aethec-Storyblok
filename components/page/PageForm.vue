@@ -1,8 +1,5 @@
 <template>
-  <div
-    class="relative"
-    style="padding-top: 56.25%"
-  >
+  <div class="contact relative -mt-5" style="padding-top: 56.25%">
     <iframe
       class="absolute inset-0 w-full h-full"
       :src="blok.url"
@@ -23,3 +20,8 @@ export default {
   }
 };
 </script>
+<style scoped>
+.contact {
+  min-height: 200vh;
+}
+</style>

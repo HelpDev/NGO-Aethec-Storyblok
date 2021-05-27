@@ -1,5 +1,5 @@
 <template>
-  <header class="relative bg-primary-500">
+  <header class="relative bg-primary-500 z-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <div
         class="flex justify-between items-center py-6 md:justify-start md:space-x-10"
@@ -92,7 +92,7 @@ export default {
   components: {
     TranslateIcon
   },
-  setup(props, context) {
+  setup() {
     const menu = [
       { link: 'projects', text: 'menu.projects' },
       // { link: 'collaborate', text: 'menu.collaborate' },

@@ -2,7 +2,7 @@
   <nuxt-link
     :to="localePath(blok.page)"
     :class="
-      `flex flex-col items-center justify-between col-span-4 px-8 py-12 space-y-4 bg-gray-50 sm:rounded-xl transition-all shadow-md ${
+      `flex flex-col items-center flex-start col-span-4 px-8 py-12 space-y-4 bg-gray-50 sm:rounded-xl transition-all shadow-md ${
         blok.page ? 'hover:shadow-lg hover:bg-gray-100' : ''
       }`
     "

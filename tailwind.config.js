@@ -31,7 +31,8 @@ module.exports = {
           twitter: '#1da1f2',
           facebook: '#1877f2',
           instagram: '#e4405f',
-          mail: '#005ff9'
+          mail: '#005ff9',
+          whatsapp: '#25D366'
         }
       },
       height: {
