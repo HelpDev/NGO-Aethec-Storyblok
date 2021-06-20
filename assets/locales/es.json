@@ -15,5 +15,10 @@
     "title": "Conoce nuestros proyectos",
     "view": "Ver proyecto",
     "pictures": "Sobre el proyecto"
+  },
+  "donations": {
+    "cta": "¡Dona!",
+    "ok": "Gracias por la información",
+    "text": "Gracias a las donaciones podemos trabajar en los diferentes proyectos para ayudar a las personas a tener una mejor vida, puedes ayudarnos usando Bizum ({bizum}) o una donación a nuestra Cuenta Bancaria ({bank})"
   }
 }

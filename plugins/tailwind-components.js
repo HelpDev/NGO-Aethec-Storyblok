@@ -514,7 +514,7 @@ const settings = {
     props: {
       fixedClasses: {
         overlay:
-          'overflow-auto scrolling-touch left-0 top-0 bottom-0 right-0 w-full h-full fixed z-40 bg-opacity-50',
+          'overflow-auto scrolling-touch left-0 top-0 bottom-0 right-0 w-full h-full fixed z-50 bg-opacity-50',
         wrapper: 'relative mx-auto',
         modal: 'overflow-visible relative ',
         close:
@@ -531,7 +531,7 @@ const settings = {
         close: 'bg-gray-100 text-gray-600 hover:bg-gray-200',
         closeIcon: 'fill-current h-4 w-4',
         overlay: 'bg-black',
-        wrapper: 'z-50 max-w-lg px-3 py-12',
+        wrapper: 'z-50 max-w-lg px-3 py-32',
         dialog: 'bg-white shadow rounded text-left',
         body: 'p-3 space-y-3',
         buttons: 'bg-gray-100',
@@ -540,7 +540,7 @@ const settings = {
         content: 'w-full flex justify-center flex-col',
         titleWrapper: '',
         title: 'text-lg font-semibold text-center',
-        textWrapper: 'text-left w-full',
+        textWrapper: 'text-left w-full px-4 text-lg',
         text: '',
         cancelButton:
           'block px-4 py-2 transition duration-100 ease-in-out bg-white border border-gray-300 rounded shadow-sm hover:bg-gray-100 focus:border-gray-100 focus:ring-2 focus:ring-blue-500 focus:outline-none focus:ring-opacity-50 disabled:opacity-50 disabled:cursor-not-allowed w-full max-w-xs',
