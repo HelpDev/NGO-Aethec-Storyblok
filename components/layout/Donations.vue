@@ -23,7 +23,13 @@
       icon="info"
       :showCloseButton="true"
       :okButtonText="$t('donations.ok')"
-      >{{ $t('donations.text', { bizum: '03027', bank: 'XXXXX' }) }}</t-dialog
+      >{{
+        $t('donations.text', {
+          bizum: settings.bizum,
+          verse: settings.verse,
+          bank: settings.bank
+        })
+      }}</t-dialog
     >
   </div>
 </template>
@@ -31,6 +37,14 @@
 import { ref } from '@vue/composition-api';
 
 export default {
+  computed: {
+    settings() {
+      debugger;
+      const settings = this.$store.state.settings.donations;
+      console.log(settings);
+      return settings;
+    }
+  },
   setup() {
     const showDialog = ref();
 

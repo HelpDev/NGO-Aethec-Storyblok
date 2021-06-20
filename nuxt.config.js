@@ -3,17 +3,6 @@ const token = process.env.STORYBLOK_TOKEN;
 
 export default {
   /*
-   ** Nuxt rendering mode
-   ** See https://nuxtjs.org/api/configuration-mode
-   */
-  mode: 'universal',
-  /*
-   ** Nuxt target
-   ** See https://nuxtjs.org/api/configuration-target
-   */
-  target: 'server',
-
-  /*
    ** Headers of the page
    ** See https://nuxtjs.org/api/configuration-head
    */
@@ -25,6 +14,16 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
+  /*
+   ** Nuxt rendering mode
+   ** See https://nuxtjs.org/api/configuration-mode
+   */
+  mode: 'universal',
+  /*
+   ** Nuxt target
+   ** See https://nuxtjs.org/api/configuration-target
+   */
+  target: 'server',
   /*
    ** Global CSS
    */
@@ -75,13 +74,14 @@ export default {
   generate: generateStoryblokUrls(token),
 
   i18n: {
-    locales: ['en', 'es'],
+    locales: ['en', 'es', 'ca'],
     defaultLocale: 'en',
     vueI18n: {
       fallbackLocale: 'en',
       messages: {
         en: require('./assets/locales/en.json'),
-        es: require('./assets/locales/es.json')
+        es: require('./assets/locales/es.json'),
+        ca: require('./assets/locales/ca.json')
       }
     },
     detectBrowserLanguage: {
