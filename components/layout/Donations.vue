@@ -39,7 +39,6 @@ import { ref } from '@vue/composition-api';
 export default {
   computed: {
     settings() {
-      debugger;
       const settings = this.$store.state.settings.donations;
       console.log(settings);
       return settings;

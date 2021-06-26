@@ -2,9 +2,9 @@
   <header class="relative bg-primary-500 z-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <div
-        class="flex justify-between items-center py-6 md:justify-start md:space-x-10"
+        class="flex justify-between items-center py-2 flex-wrap lg:py-6 md:space-x-10"
       >
-        <div class="flex justify-start lg:w-0 lg:flex-1">
+        <div class="flex justify-between w-full lg:w-auto">
           <nuxt-link :to="localePath('/')">
             <img
               class="h-8 w-auto sm:h-10"
@@ -13,7 +13,7 @@
             />
           </nuxt-link>
         </div>
-        <nav class="flex space-x-10">
+        <nav class="flex space-x-10 mt-2 lg:mt-0 flex-1 justify-center">
           <nuxt-link
             v-for="menuItem in menu"
             :key="menuItem.text"
@@ -23,7 +23,9 @@
             {{ $t(menuItem.text) }}
           </nuxt-link>
         </nav>
-        <div class="flex items-center justify-end md:flex-1 lg:w-0">
+        <div
+          class="flex items-center justify-end absolute right-0 top-1 lg:relative lg:w-0"
+        >
           <t-dropdown
             :fixedClasses="{
               button:
@@ -103,9 +105,24 @@ export default {
     const menu = [
       { link: 'projects', text: 'menu.projects' },
       // { link: 'collaborate', text: 'menu.collaborate' },
-      { link: 'team', text: 'menu.team' },
+      { link: 'team', text: 'menu.team' }
       // { link: 'articles', text: 'menu.articles' },
-      { link: 'contact', text: 'menu.contact' }
+      // { link: 'contact', text: 'menu.contact' },
+      // { link: 'projects', text: 'menu.projects' },
+      // // { link: 'collaborate', text: 'menu.collaborate' },
+      // { link: 'team', text: 'menu.team' },
+      // // { link: 'articles', text: 'menu.articles' },
+      // { link: 'contact', text: 'menu.contact' },
+      // { link: 'projects', text: 'menu.projects' },
+      // // { link: 'collaborate', text: 'menu.collaborate' },
+      // { link: 'team', text: 'menu.team' },
+      // // { link: 'articles', text: 'menu.articles' },
+      // { link: 'contact', text: 'menu.contact' },
+      // { link: 'projects', text: 'menu.projects' },
+      // // { link: 'collaborate', text: 'menu.collaborate' },
+      // { link: 'team', text: 'menu.team' },
+      // // { link: 'articles', text: 'menu.articles' },
+      // { link: 'contact', text: 'menu.contact' }
     ];
 
     return { menu };
