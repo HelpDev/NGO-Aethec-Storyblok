@@ -29,7 +29,3 @@ You will find your tailwind config viewer at `http://localhost:3000/_tailwind/`
 
 - Vue Tailwind Components: https://www.vue-tailwind.com/
 - Tailwind UI: https://tailwindui.com/
-
-## TODO
-
-- Move components from vue 2 like sintaxis to vue 3 like syntax
