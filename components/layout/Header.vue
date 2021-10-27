@@ -29,7 +29,7 @@
         <div
           class="flex items-center justify-end absolute right-0 top-1 lg:relative lg:w-0"
         >
-          <t-dropdown
+          <!-- <t-dropdown
             :fixedClasses="{
               button:
                 'block px-4 py-2 text-white transition duration-100 ease-in-out bg-blue-500 border border-transparent rounded shadow-sm hover:bg-blue-600 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 focus:outline-none focus:ring-opacity-50 disabled:opacity-50 disabled:cursor-not-allowed',
@@ -67,7 +67,7 @@
               </t-button>
             </div>
 
-            <!-- <div class="py-1 rounded-md shadow-xs">
+             <div class="py-1 rounded-md shadow-xs">
               <nuxt-link
                 :to="switchLocalePath('en')"
                 class="block px-4 py-2 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
@@ -88,9 +88,9 @@
                 role="menuitem"
               >
                 Català
-              </nuxt-link> -->
-            <!-- </div> -->
-          </t-dropdown>
+              </nuxt-link>
+             </div>
+          </t-dropdown> -->
         </div>
       </div>
     </div>
