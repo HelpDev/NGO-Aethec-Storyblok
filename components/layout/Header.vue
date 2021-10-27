@@ -89,7 +89,7 @@
               >
                 Català
               </nuxt-link> -->
-            </div>
+            <!-- </div> -->
           </t-dropdown>
         </div>
       </div>
