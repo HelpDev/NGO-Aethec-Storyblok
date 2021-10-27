@@ -1,7 +1,7 @@
 {
-  "name": "ngo-needu-storyblok",
-  "version": "1.0.7",
-  "description": "Storyblok project for Needu",
+  "name": "ngo-aethec-storyblok",
+  "version": "1.0.8",
+  "description": "Storyblok project for Aethec fork from NeedU 1.0.7",
   "author": "HelpDev",
   "private": true,
   "scripts": {

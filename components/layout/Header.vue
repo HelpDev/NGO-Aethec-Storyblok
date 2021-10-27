@@ -67,7 +67,7 @@
               </t-button>
             </div>
 
-            <div class="py-1 rounded-md shadow-xs">
+            <!-- <div class="py-1 rounded-md shadow-xs">
               <nuxt-link
                 :to="switchLocalePath('en')"
                 class="block px-4 py-2 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
@@ -88,7 +88,7 @@
                 role="menuitem"
               >
                 Català
-              </nuxt-link>
+              </nuxt-link> -->
             </div>
           </t-dropdown>
         </div>
@@ -106,11 +106,11 @@ export default {
   },
   setup() {
     const menu = [
-      { link: 'projects', text: 'menu.projects' },
+      // { link: 'projects', text: 'menu.projects' },
       // { link: 'collaborate', text: 'menu.collaborate' },
-      { link: 'team', text: 'menu.team' },
+      // { link: 'team', text: 'menu.team' },
       // { link: 'articles', text: 'menu.articles' },
-      { link: 'contact', text: 'menu.contact' }
+      // { link: 'contact', text: 'menu.contact' }
     ];
 
     return { menu };
