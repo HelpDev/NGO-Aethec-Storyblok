@@ -79,9 +79,7 @@ export default {
     vueI18n: {
       fallbackLocale: 'en',
       messages: {
-        en: require('./assets/locales/en.json'),
-        es: require('./assets/locales/es.json'),
-        ca: require('./assets/locales/ca.json')
+        es: require('./assets/locales/es.json')
       }
     },
     detectBrowserLanguage: {
