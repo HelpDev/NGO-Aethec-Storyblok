@@ -4,7 +4,8 @@ on:
   release:
     types: [created]
     
-  workflow_dispatch:
+  repository_dispatch:
+    types: [content]
 
 env:
   NODE_VERSION: "14.x"
