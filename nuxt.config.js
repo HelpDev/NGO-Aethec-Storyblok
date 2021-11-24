@@ -75,9 +75,9 @@ export default {
 
   i18n: {
     locales: ['en', 'es', 'ca'],
-    defaultLocale: 'en',
+    defaultLocale: 'es',
     vueI18n: {
-      fallbackLocale: 'en',
+      fallbackLocale: 'es',
       messages: {
         es: require('./assets/locales/es.json')
       }
