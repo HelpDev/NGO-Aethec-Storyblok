@@ -3,6 +3,8 @@ name: Azure Static Web Apps CI/CD
 on:
   release:
     types: [created]
+    
+  workflow_dispatch:
 
 env:
   NODE_VERSION: "14.x"
