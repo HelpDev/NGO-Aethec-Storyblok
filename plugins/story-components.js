@@ -13,7 +13,7 @@ import PageText from 'components-helpdev-storyblok/components/page/PageText.vue'
 import PageTitle from 'components-helpdev-storyblok/components/page/PageTitle.vue';
 import PageVideo from 'components-helpdev-storyblok/components/page/PageVideo.vue';
 import Project from 'components-helpdev-storyblok/components/Project.vue';
-import SocialIcon from 'components-helpdev-storyblok/components/shared/SocialIcon';
+import SocialIcon from 'components-helpdev-storyblok/components/shared/SocialIcon.vue';
 import TeamContainer from 'components-helpdev-storyblok/components/team/TeamContainer.vue';
 import TeamMember from 'components-helpdev-storyblok/components/team/TeamMember.vue';
 import Teaser from 'components-helpdev-storyblok/components/Teaser.vue';

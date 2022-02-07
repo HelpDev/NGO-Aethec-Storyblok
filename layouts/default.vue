@@ -5,7 +5,15 @@
       <Nuxt />
     </main>
     <Footer />
-    <Donations />
+    <Donations
+      :text="
+        settings.bank &&
+          $t('donations.text', {
+            bank: settings.bank,
+            bank2: settings.bank2
+          })
+      "
+    />
   </div>
 </template>
 
