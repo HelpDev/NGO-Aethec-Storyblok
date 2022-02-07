@@ -5,22 +5,15 @@
       <Nuxt />
     </main>
     <Footer />
-    <Donations
-      :text="
-        settings.bank &&
-          $t('donations.text', {
-            bank: settings.bank,
-            bank2: settings.bank2
-          })
-      "
-    />
+
+    <Donations />
   </div>
 </template>
 
 <script>
-import Header from 'components-helpdev-storyblok/components/layout/Header.vue';
-import Footer from 'components-helpdev-storyblok/components/layout/Footer.vue';
-import Donations from 'components-helpdev-storyblok/components/layout/Donations.vue';
+import Header from '~/components/layout/Header.vue';
+import Footer from '~/components/layout/Footer.vue';
+import Donations from '~/components/layout/Donations.vue';
 
 export default {
   components: {
