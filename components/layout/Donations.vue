@@ -26,9 +26,8 @@
       >{{
         settings.bank &&
           $t('donations.text', {
-            bizum: settings.bizum,
-            verse: settings.verse,
-            bank: settings.bank
+            bank: settings.bank,
+            bank2: settings.bank2
           })
       }}</t-dialog
     >

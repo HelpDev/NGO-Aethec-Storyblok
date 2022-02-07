@@ -74,7 +74,7 @@ export default {
   generate: generateStoryblokUrls(token),
 
   i18n: {
-    locales: ['en', 'es', 'ca'],
+    locales: ['es'],
     defaultLocale: 'es',
     vueI18n: {
       fallbackLocale: 'es',

@@ -108,9 +108,9 @@ export default {
     const menu = [
       // { link: 'projects', text: 'menu.projects' },
       // { link: 'collaborate', text: 'menu.collaborate' },
-      // { link: 'team', text: 'menu.team' },
+      { link: 'team', text: 'menu.team' },
       // { link: 'articles', text: 'menu.articles' },
-      // { link: 'contact', text: 'menu.contact' }
+      { link: 'contact', text: 'menu.contact' }
     ];
 
     return { menu };
