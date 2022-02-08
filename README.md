@@ -1,5 +1,9 @@
 # [Storyblok](https://www.storyblok.com/) + [Nuxt](https://nuxtjs.org/) + [Helpdev](https://helpdev.org) = [Aethec](https://aethec.org)
 
+## Websites
+- https://aethec.org ~> Main Website of this repository
+- https://components.helpdev.org ~> Components used in this repository and across other Helpdev websites
+
 ## Configuration Steps
 
 1. Create `.env` file
